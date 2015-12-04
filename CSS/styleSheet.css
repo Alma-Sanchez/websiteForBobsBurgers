@@ -1,0 +1,320 @@
+@import 'reset.css';
+
+@font-face{
+	font-family: 'cabin';
+	src: url("fonts/cabin/Cabin-Regular.otf");
+}
+@font-face{
+	font-family: 'AgencyFB';
+	src: url("fonts/Agency_FB.ttf");
+}
+/*<!-- =======================WHOLE=PAGE===================================== -->*/
+body{
+	margin: 0;
+}
+/*<!-- =======================HEADER===================================== -->*/
+header{
+	background-color: #f7df25;
+	height: 200px;
+	font-family: AgencyFB;
+	padding-top: 40px;
+}
+.familyPic{
+	float: left;
+	margin-top: -185px; 
+}
+.logo{
+	display: block;
+	margin: -2px auto 0 auto;
+	border: 5px solid black;
+	width: 608px;
+}
+.logo h1{
+	text-align: center;
+	font-size: 115px;
+	border: 4px solid #000;
+	color: #f42938;
+	outline-style: solid; 
+	outline-color: #f42938;
+	outline-width: 2px;
+	width: 600px;
+	padding: 0px 0 12px 0;
+   -webkit-text-stroke-width: 3px;
+   -webkit-text-stroke-color: black;
+
+}
+.orderNow{
+	float: right;
+	font-size: 45px;
+	color: #000;
+	/*Top right bottom left*/
+	margin: -115px 50px 0 0;
+}
+nav, .famNav{
+	display: inline-block;
+	background-color: #f42938;
+	width: 100%;
+	font-size: 38px;
+	z-index: 21;
+	border: 3px solid black;
+}
+nav ul, .famNav ul{
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 950px;
+	/*border: 1px solid black;*/
+}
+nav ul li, .famNav ul li{
+	display: inline;
+	list-style-type: none;
+	padding: 0 25px 0 25px;
+}
+a:link, a:visited, a:hover, a:active{
+	text-decoration: none;
+}
+a:link{
+	/*color: white;*/
+}
+a:visited{
+	color: white;
+}
+a:hover{
+	color: #88a8db;
+}
+.active{
+	background-color: #7a141c;
+	color: #7a141c;
+	/*text-decoration-color: #7a141c;*/
+}
+nav ul li{
+	border-right: 4px solid #000;
+}
+nav ul li:last-child{
+	border: none;
+}
+/*<!-- =======================BODY===================================== -->*/
+h1{
+	font-size: 36px;
+	padding: 40px 0px;
+	text-align: center;
+}
+h2{
+	padding: 30px 0;
+	font-size: 26px;
+	text-align: center;
+}
+h3{
+	font-size: 22px;
+	padding: 30px 0;
+}
+.bodyContent{
+	background-color: #fefbe6;
+	/*Top left bottom right*/
+	padding: 20px 0 155px 0;
+	z-index: -5;
+	font-family: cabin;
+}
+/*<!-- =======================FOOTER==================================== -->*/
+footer{
+	display: flex;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	background-color: #88a8db;
+	justify-items: center;
+	justify-content: center;
+	clear: both;
+	font-family: AgencyFB;
+}
+.burgerDrawing{
+	margin-top: 30px;
+	/*border: 1px solid red;*/
+}
+.hours h2, .location h2{
+	text-align: center;
+	padding-bottom: 15px;
+}
+.hours, .location{
+	padding-top: 10px;
+	width: 220px;
+	/*border: 3px solid black;*/
+}
+.hours p{
+	text-align: left;
+	padding-bottom: 15px;
+}
+.hours, .location{
+	margin: 0 95px;
+}
+.location p{
+	text-align: center;
+}
+/*<!-- =======================HOME=PAGE===================================== -->*/
+.aboutRest{
+	width: 40%;
+	margin: 0 auto 40px auto;
+}
+.aboutRest img{
+	float: right;
+	padding: 3%;
+}
+.ads{
+	display: block;
+	padding: 40px 0 20px 0;
+	float: right;
+}
+.ads ul{
+	list-style-type: none;
+	padding-bottom: 10px;
+}
+/*<!-- =======================MENU=SHEET===================================== -->*/
+.menu h2{
+	/*margin: 50px auto 0 auto;*/
+	text-align: center;
+	/*border: 1px solid red;*/
+}
+.menu{
+	margin: 0 auto 0 auto;
+	width: 1000px;
+}
+.menu ul, .menu h2{
+	width: 500px;
+}
+.menu ul li{
+	padding-bottom: 5px;
+}
+.menu .rightSide{
+	margin-top: -1180px;
+	padding-top: -100px;
+}
+/*<!-- =======================Special=Events===================================== -->*/
+.windowSlideShow{
+	display: block;
+	position: relative;
+	margin: 80px auto 0 auto;
+	width: 42%;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+.images{
+	width: 750px;
+	margin: 0 auto 0 auto;
+}
+.windowSlideShow figure, .dinner figure{
+	position: absolute;
+	opacity: 0;
+}
+.windowSlideShow figcaption{
+  position: absolute;
+  font-size: .8em;
+  bottom: .55em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0,0,0, .75);
+  border-radius: 2px;
+}
+figure.show{
+	opacity: 1;
+  	position: static;
+}
+.dinNext, .next, .dinPrev, .prev{
+  color: #f7df25;
+  position: absolute;
+  background: #f42938;
+  top: 65%;
+  z-index: 1;
+  font-size: 3em;
+  margin-top: -.75em;
+  opacity: 1;
+  /*user-select: none;*/
+}
+.dinNext:hover, .next:hover, .dinPrev:hover, .prev:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.next, .dinNext{
+	right: 0;
+	padding: 10px 6px 15px 10px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.prev, .dinPrev{
+	/*left: 0;*/
+	padding: 10px 10px 15px 5px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.images p{
+	padding: 15px;
+}
+.dinner{
+	display: block;
+	position: relative;
+	margin: 380px auto 0 auto;
+	width: 42%;
+	overflow: hidden;
+	/*border: 1px solid red;*/
+}
+/*<!-- =======================Catering=Form===================================== -->*/
+.cateringForm{
+	margin: 50px auto 0 auto;
+	width: 800px;
+}
+.rightSide{
+	float: right;
+	margin-top: -150px;
+}
+.submitButton{
+	border-top: 1px solid #96d1f8;
+	border-bottom: 1px solid #000;
+	color: #fff;
+	width: 80px;
+	background-color: #f42938;
+	margin: 20px 0 0 60%;
+	padding: 15px;
+	font-size: 26px;
+	/*float: right;*/
+    background: -webkit-gradient(linear, left top, left bottom, from(#f70303), to(#823636));
+    background: -webkit-linear-gradient(top, #f70303, #823636);
+    background: -moz-linear-gradient(top, #f70303, #823636);
+    background: -ms-linear-gradient(top, #f70303, #823636);
+    background: -o-linear-gradient(top, #f70303, #823636);
+}
+.submitButton:visited, .submitButton:active .submitButton:link{
+	color: #fff;
+}
+.submitButton:hover{
+   border-top-color: #782828;
+   background: #782828;
+   color: #ccc;
+}
+/*<!-- =======================Meet the Family===================================== -->*/
+/*.famNav{
+	display: block;
+	width: 1200px;
+	margin: 0 auto 0 auto;
+}
+.famNav ul{
+	width: 100%;
+	font-size: 26px;
+	/*border: 1px solid blue;
+}
+.famNav ul li{
+	border-right: 4px solid #000;
+}
+.famNav ul li:last-child{
+	border: none;
+}
+.familyBio p{
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+.familyBio{
+	margin: 0 auto;
+	width: 800px;
+}*/
+/*============================Submit==============================================*/
+.submit{
+	font-size: 45px;
+	margin: 50px auto 0 auto;
+	width: 70%;
+}
