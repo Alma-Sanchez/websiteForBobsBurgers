@@ -9,12 +9,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Load styles -->
 		<link rel="stylesheet" href="../CSS/styleSheet.css">
+		<link rel="shortcut icon" href="../images/favBob.png"/>
 	</head>
 	<body>
 		<!-- =======================HEADER===================================== -->
 		<header>
 			<!-- ===================LOGO======================================= -->
-			<div class = "logo">
+			<div class = "logo" id = "Top">
 				<h1>Bob's Burgers</h1>
 			</div>
 
@@ -40,7 +41,7 @@
 		<!-- =====================BODY=================================================== -->
 		<div class = "bodyContent">
 			<h1>Meet the Family</h1>
-<!-- 			<div class = "famNav">
+		<!-- <div class = "famNav">
 				<ul>
 					<li><a href = "#Bob"> Bob Belcher </a></li>
 					<li><a href = "#Linda"> Linda Belcher</a></li>
@@ -49,58 +50,74 @@
 					<li><a href = "#Louise"> Louise Belcher</a></li>
 				</ul>
 			</div> -->
-			<div class = "familyBio">
-				<h2 id = "Bob"> Bob Belcher</h2>
-				<p>
-					Bob is awesome. Robert "Bob" Belcher, Jr. is a third-generation restaurateur, and the main protagonist of the Fox animated series, Bob's Burgers. Bob runs Bob's Burgers with the help of his wife, Linda, and their three kids, Tina, Gene, and Louise. 
-				</p>
-				<img src="../images/bob.png" alt = "Bob">
-				<h2 id = "Linda"> Linda Belcher</h2>
-				<p>
-					Linda Belcher is the wife of Bob Belcher and the mother of Tina, Gene, and Louise. Linda supports her husband Bob's dream through thick and thin. She has a joyful enthusiasm for whatever she undertakes, from dinner theater to synchronized swimming to road rage. And she loves to make up songs. 
-				</p>
-				<img src="../images/lindaBelcher.jpg">
-				<h2 id = "Tina"> Tina Belcher</h2>
-				<p>
-					Tina Ruth Belcher is the oldest child. She is a hopeless romantic with a powerful sex drive and minimal social skills.  She likes horses, rainbows, zombies, writing erotic fiction, and movies, as was revealed in Crawl Space. She attends Wagstaff School with her siblings, Gene Belcher and Louise Belcher. She is voiced by Dan Mintz. 
-				</p>
-				<img src="../images/tina.gif">
+			<div class = "famContainer">
+				<div class = "familyBio">
+					<h2> Bob Belcher</h2>
+					<p>
+						Bob is awesome. Robert "Bob" Belcher, Jr. is a third-generation restaurateur, and the main chef of the restaurant. Bob runs Bob's Burgers with the help of his wife, Linda, and their three kids, Tina, Gene, and Louise. Bob is also responsible for the punny burger of the day namings. If they are offensive, it is because Louise loves to sabbotage Bob's ideas.
+					</p>
+					<h2> Linda Belcher</h2>
+					<p>
+						Linda Belcher is the wife of Bob Belcher and the mother of Tina, Gene, and Louise. Linda supports her husband Bob's dream through thick and thin. She has a joyful enthusiasm for whatever she undertakes, from dinner theater to synchronized swimming to road rage. And she loves to make up songs or sing all the time.  
+					</p>
+					<h2> Tina Belcher</h2>
+					<p>
+						Tina Ruth Belcher is the oldest child. She is a hopeless romantic with a powerful sex drive and minimal social skills.  She likes horses, rainbows, zombies, butts, writing erotic fiction, and movies. She attends Wagstaff School with her siblings, Gene Belcher and Louise Belcher. She also has a huge cruch on Jimmy Junior.
+					</p>
 
-				<h2 id = "Gene"> Gene Belcher</h2>
-				<p>
-					Gene Belcher is the middle child of Bob and Linda Belcher. He is the only boy out of the three siblings. Gene is an aspiring keyboardist and a prankster. He maintains very close relationships with both of his parents and two sisters, Tina and Louise Belcher. Gene, along with Tina, is usually a pawn in schemes set up by Louise. He attends Wagstaff School with his siblings. 
-				</p>
-				<img src="../images/Gene_Belcher.png">
-				<h2 id = "Louise"> Louise Belcher</h2>
-				<p>
-					Louise Belcher is the youngest in the family. Her off-balance sense of humor and hunger for conflict makes her somewhat of a liability in the kitchen. Like her siblings, Gene and Tina, Louise goes to Wagstaff School. She is in the 4th grade. 
-				</p>
-				<img src = "../images/LouiseInCharge.jpg" alt = "Louise is in charge picture.">
+					<h2> Gene Belcher</h2>
+					<p>
+						Gene Belcher is the middle child of Bob and Linda Belcher. He is the only boy out of the three siblings and occasionally has a femanine side. Gene is an aspiring keyboardist and a prankster. He maintains very close relationships with both of his parents and two sisters, Tina and Louise Belcher. Gene, along with Tina, is usually a pawn in schemes set up by Louise. He attends Wagstaff School with his siblings. 
+					</p>
+					<h2 id = "Louise"> Louise Belcher</h2>
+					<p>
+						Louise Belcher is the youngest in the family and probably the mastermind of the family. She greatly enjoys coming up with plans to prank someone. Her off-balance sense of humor and hunger for conflict makes her somewhat of a liability in the kitchen. Like her siblings, Gene and Tina, Louise goes to Wagstaff School and is in the 4th grade. 
+					</p>
+				</div>
+				<div class = "famPics">
+					<ul>
+						<li> <img src="../images/bob.png" alt = "Bob"> </li>
+						<li> <img src="../images/lindaBelcher.png" alt = "Picture of Linda Belcher"> </li>
+						<li> <img src="../images/tina.png" alt = "Picture of Tina Belcher"> </li>
+						<li> <img src="../images/Gene_Belcher.png" alt = "Picture of Gene Belcher"> </li>
+						<li> <img src = "../images/LouiseInCharge.jpg" alt = "Louise is in charge picture."> </li>
+					</ul>
+				</div>	
+				<div class = "backToTop">
+					<a href = "#Top">&#94;</a>
+				</div>
 			</div>
 		</div>
 
-		<!-- ======================FOOTER================================================= -->
+		<!-- =======================FOOTER=====================================	-->
 		<footer>
 			<div class = "location">
-				<h2>Location:</h2>	
+				<h2>Location:</h2>
 				<p>
 					Bob’s Burgers <br>
-					74 1/2 Ocean Ave <br>	
+					74 1/2 Ocean Ave <br>
 					Atlantic Highlands, NJ 07716 
 				</p>
 			</div>
 
 			<div class = "burgerDrawing">
-				<img src = "../images/cheeseburger.png" alt = "Cartoon cheesburger image."> 
+				<img src = "../images/cheeseburger.png" alt = "logo image"> 
 			</div>
-
+			<div class = "info">
+				<p>&#169;2015 Bob's Burgers Restaurant <br> Website by Alma Sanchez</p>
+				<p><a href="http://bobs-burgers.wikia.com/wiki/Bob%27s_Burgers_Wiki" target = "_blank">Info and picture credit.</a>&nbsp;&nbsp;| &nbsp;&nbsp;Other pictures are screen-shots.</p>
+			</div>
+			<div class = "burgerDrawing">
+				<img src = "../images/cheeseburger.png" alt = "logo image"> 
+			</div>
+			
 			<div class = "hours">
 				<h2>Hours:</h2>
 				<p>	
-					Mon - Thurs: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8 am - 9 pm <br>
-					Friday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 am - 11 pm <br>
-					Saturday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 am - 9 pm <br>
-					 Sunday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed
+					Mon - Thurs: &nbsp;&nbsp;&nbsp;8 am - 9 pm <br>
+					Friday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9 am - 11 pm <br>
+					Saturday: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10 am - 9 pm <br>
+					 Sunday:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Closed
 				</p>
 			</div>
 		</footer> 
