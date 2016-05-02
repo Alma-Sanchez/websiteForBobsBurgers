@@ -184,7 +184,6 @@ footer{
 }
 /*<!-- =======================MENU=SHEET===================================== -->*/
 .menu h2{
-	/*margin: 50px auto 0 auto;*/
 	text-align: center;
 	width: 400px;
 	/*border: 1px solid red;*/
@@ -365,11 +364,14 @@ figure.show{
 }
 .famPics{
 	float: right;
-	/*clear:both;*/
 	margin-top: -1500px;
 }
+.familyBio h2{
+	text-align: left
+}
 .familyBio p{
-	padding-bottom: 85px;
+	border-top: 2px solid red;
+	padding: 5px 5px 85px 5px;
 }
 /*============================Submit=Page=============================================*/
 .submit{
